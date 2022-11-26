@@ -6,6 +6,7 @@ h1{
 body{
     -webkit-user-select: none;
     color: white;
+    background-color: #6f8eb6;
 }
 
 /* width */
@@ -15,7 +16,7 @@ body{
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #000000;
   }
   
   /* Handle */
@@ -45,11 +46,21 @@ body{
 
 .product img{
   position: absolute;
-  height: 100px;
+  height: 200px;
   left: 30px;
   top: 30px;
   transform: translateY(50px);
   transition: all 1s ease;
+}
+
+#pc3{
+  height: 150px;
+}
+#pc4{
+  height: 180px;
+}
+#pc5{
+  height: 180px;
 }
 
 .product button{
@@ -114,4 +125,46 @@ body{
 
 #searchbar img:hover{
  cursor: pointer;
+}
+
+#product{
+  width: 600px;
+  height: 600px;
+  border: 1px solid black;
+  border-bottom-left-radius: 20%;
+  border-top-right-radius: 20%;
+  position: relative;
+  top: 30px;
+  left: 25%;
+  background-color: rgba(136, 136, 136, 0.296);
+}
+
+#product button{
+  border: 0;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  left: 28%;
+  top: 50%;
+  border-bottom-left-radius: 30%;
+  border-top-right-radius: 30%;
+  background: green;
+  color: white;
+  transition: all 1s ease;
+  font-size: 20px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#product button:hover{
+  background: rgba(0, 128, 0, 0.453);
+  cursor: pointer;
+}
+
+
+
+div img{
+  height: 200px;
+  position: relative;
+  left: 33%;
+  top: 20px;
 }

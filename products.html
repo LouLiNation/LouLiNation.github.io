@@ -38,33 +38,7 @@
 
     <script>
         async function showProduct1(){
-            const ipAPI = '//api.ipify.org?format=json'
-
-const inputValue = 1
-
-const { value: ipAddress } = await Swal.fire({
-  title: 'Enter Amount',
-  input: 'number',
-  
-  inputValue: inputValue,
-  showCancelButton: true,
-  inputValidator: (value) => {
-    if (!value) {
-      return 'You need to write something!'
-    }
-  }
-})
-
-if(ipAddress){
-    Swal.fire({
-  icon: 'success',
-  title: 'Buyed Successfully',
-
-  
-})
-}
-
-
+          window.location.href = "products/product1.html";
         }
        
         

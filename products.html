@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="products.css">
+    
+</head>
+
+<body>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <h1>Check Our New Products</h1>
+    <div id="searchbar">
+        <input type="text" placeholder="Search">
+        <img src="assets/searchicon.png" alt="">
+    </div>
+
+    <div class="product">
+        <img src="https://d2xpg1khvwxlf1.cloudfront.net/production/images/original/39164-23NBA_Paris_Game_onDkBkgd-477b278c0f31f36d1a99642829e19225.png" alt="">
+        <button onclick="showProduct1()">Buy</button>
+    </div>
+    <div class="product">
+        
+    </div>
+    <div class="product"></div>
+    <div class="product"></div>
+    <div class="product"></div>
+    <div class="product"></div>
+    <div class="product"></div>
+    <div class="product"></div>
+    <div class="product"></div>
+    <div class="product"></div>
+    <div class="product"></div>
+    <div class="product"></div>
+
+    <script>
+        async function showProduct1(){
+            const ipAPI = '//api.ipify.org?format=json'
+
+const inputValue = 1
+
+const { value: ipAddress } = await Swal.fire({
+  title: 'Enter Amount',
+  input: 'number',
+  
+  inputValue: inputValue,
+  showCancelButton: true,
+  inputValidator: (value) => {
+    if (!value) {
+      return 'You need to write something!'
+    }
+  }
+})
+
+if(ipAddress){
+    Swal.fire({
+  icon: 'success',
+  title: 'Buyed Successfully',
+
+  
+})
+}
+
+
+        }
+       
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+h1{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    -webkit-user-select: none;
+    color: white;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  ::-webkit-scrollbar-button{
+    width: 1px;
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+.product{
+    width: 260px;
+    height: 320px;
+    background-color: #f1f1f14d;
+    display: inline-block;
+    margin: 2%;
+    transition: all 1s ease;
+    border-radius: 3%;
+    position: relative;
+}
+
+.product img{
+  position: absolute;
+  height: 100px;
+  left: 30px;
+  top: 30px;
+  transform: translateY(50px);
+  transition: all 1s ease;
+}
+
+.product button{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  top: 230px;
+  left: 20px;
+  transition: all 1s ease;
+  opacity: 0;
+  transform: scale(0);
+  border: 0;
+  background-color: rebeccapurple;
+  color: white;
+  width: 200px;
+  height: 50px;
+  border-radius: 10%;
+  }
+
+.product:hover{
+    background-color: darkslategray;
+    cursor: pointer;
+    
+}
+
+.product:hover img{
+  transform: scale(1.1);
+  
+}
+
+
+.product:hover button{
+  opacity: 1;
+  transform: scale(1);
+  
+}
+
+.product button:hover{
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: rgba(102, 51, 153, 0.519);
+}
+
+
+
+#searchbar input{
+  position: relative;
+  left: 500px;
+  width: 200px;
+  height: 20px;
+  border-radius: 10%;
+}
+
+#searchbar img{
+  position: relative;
+  left: 500px;
+  top: 7px;
+  height: 25px;
+  border-radius: 10%;
+}
+
+#searchbar img:hover{
+ cursor: pointer;
+}

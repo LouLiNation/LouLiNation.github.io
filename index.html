@@ -10,22 +10,22 @@
 <body>
 
     <header>
-
+        <img src="assets/logo.png" alt="">
     </header>
     <nav>
-        <a onclick="changeHome()" href="#">Home</a>
-        <a onclick="changeProducts()" href="#">Products</a>
-        <a onclick="change()" href="#">Contact</a>
+        <a onclick="changeHome()" href="javascript:void(0)">Home</a>
+        <a onclick="changeProducts()" href="javascript:void(0)">Products</a>
+        <a onclick="change()" href="javascript:void(0)">Contact</a>
     </nav>
     <section>
-        <iframe id="myFrame" src="home.html" width="1300" height="800"  frameborder="0"></iframe>
+        <iframe id="myFrame" src="https://traplife.org/swag" width="1300" height="800"  frameborder="0"></iframe>
     </section>
     <aside></aside>
 
     
     <script>
         function changeHome(){
-            document.getElementById("myFrame").src = "home.html";
+            document.getElementById("myFrame").src = "https://traplife.org/swag";
         }
 
         function changeProducts(){

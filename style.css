@@ -2,6 +2,21 @@ header{
     height: 200px;
     border: 1px solid black;
     margin-bottom: 1%;
+    position: relative;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: #6f8eb6;
+}
+
+header img{
+  position: absolute;
+  height: 200px;
+  left: 45%;
+  transition: all 1s ease;
+}
+
+header img:hover{
+  transform: scale(1.2);
 }
 body{
     -webkit-user-select: none;
@@ -15,7 +30,7 @@ body{
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #000000;
   }
   
   /* Handle */
@@ -34,17 +49,20 @@ body{
 
 
 nav{
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
     width: 300px;
     height: 800px;
     border: 1px solid black;
     float: left;
     margin-right: 0.2%;
+    background-color: #6f8eb6;
 }
 
 nav a {
     
    display: inline-block;
-   margin-top: 20%;
+   margin-top: 50%;
    margin-left: 30%;
    background-color: beige;
    text-decoration: none;
@@ -70,14 +88,20 @@ section{
     border: 1px solid black;
     display: inline-block;
     position: relative;
+    border-radius: 3%;
+    
 }
 
 section iframe{
     position: absolute;
     border: 0;
+    border-radius: 3%;
 }
 
 aside{
+  border-top-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  background-color: #6f8eb6;
     width: 270px;
     height: 800px;
     border: 1px solid black;
